@@ -10,4 +10,7 @@ body{
   background-size: cover;
 }
 
-
+a{
+    text-decoration: none;
+    color: #fff;
+  }

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const CardShipStyle = styled.div`
+const StarShipStyle = styled.div`
   background-color: #151515;
   color: white;
   width: 60%;
@@ -14,10 +14,11 @@ const CardShipStyle = styled.div`
   h5{
     padding: 0 1rem;
     font-size: 1rem;
+    
   }
-  a{
-    text-decoration: none;
-    color: #fff;
+  span{
+    color: #676767;
+    margin: 0.5rem;
   }
 `;
-export default CardShipStyle;
+export default StarShipStyle;

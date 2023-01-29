@@ -1,29 +1,25 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import Header from './components/Header/Header'
 import Navbar from './components/Navbar/Navbar';
-import CardShip from './components/CardShip/CardShip';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from './pages/Home';
+import ListShips from './pages/ListShips';
+import StarShip from './components/StarShip/StarShip';
 
 function App() {
-
-  const [starShips, setStarShips] = useState('');
-
-  useEffect(() => {
-    axios.get('https://swapi.dev/api/starships/')
-      .then(res => {
-        setStarShips(res.data.results);
-      })
-  }, [])
-
 
   return (
     <div className="App">
       <Header></Header>
       <Navbar></Navbar>
-      {starShips.map((starShip) => {
-        return <CardShip key={starShip.url} name={starShip.name} model={starShip.model}></CardShip>
-      })}
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/ListShips" element={<ListShips />} />
+          <Route path="ListShips/:idShip" element={<StarShip />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
