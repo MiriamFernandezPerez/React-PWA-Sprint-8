@@ -35,7 +35,7 @@ const StarShip = () => {
         } catch (error) {
         }
     }, [])
-    console.log(isLoaded);    
+    console.log(isLoaded);
     
     return(
         <div className="App">
