@@ -16,5 +16,51 @@ body{
 
 a{
   text-decoration: none;
+  color: transparent;
+}
+
+/* Modificación CSS pagination */
+
+.pagination > li > a
+{
+  background-color: transparent;
   color: #fff;
+  padding: 1rem 3rem;
+  
+}
+
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    /* color: #000; */
+    background-color: #999;
+}
+
+.pagination > .active > a
+{
+    color: #000;
+    background-color: #999;
+    border-color: #fff;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: #999;
+    border-color: 1px solid #fff;
+}
+
+.active>.page-link, .page-link.active {
+  border-color: 1px solid #fff;
+}
+
+.pagination > .disabled > a
+{
+    color: #fff;
+    background-color: transparent;
+}
+
+.pagination > .disabled > a:hover
+{
+    background-color: #999;
 }
