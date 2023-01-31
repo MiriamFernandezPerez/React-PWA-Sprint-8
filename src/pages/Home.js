@@ -8,9 +8,11 @@ const Home = () => {
 
         <div className="container mt-5">
             <div className="row text-center">
-                <div className="col-md-12">
+                <div className="col-md-12 my-5">
+                    <h3 className="text-white my-5">Wellcome to StarWars Page</h3>
+                    <h3 className="text-white my-5">Enjoy it and have fun</h3>
                     <Link to='/ListShips'>
-                        <BotonInicio textBtnInicio="Entrar" className="btn-submit" type="button" ></BotonInicio>
+                        <BotonInicio textBtnInicio="Start" className="btn-submit" type="button" ></BotonInicio>
                     </Link>
                 </div>
             </div>

@@ -11,15 +11,9 @@ const NavbarStyle = styled.nav`
   font-size: 1.6rem;
   margin-bottom: 2rem;
   
-  &::before{
-    height: 2px;
-    background-color: #fff;
-    content: "";
-    width: 100%;
-    margin-bottom: 0.5rem;
-  }
+  
   &::after{
-    height: 2px;
+    height: 1px;
     background-color: #fff;
     content: "";
     width: 100%;
@@ -29,10 +23,9 @@ const NavbarStyle = styled.nav`
     text-decoration: none;
     color: #fff;
     padding: 0.5rem;
-    border: 2px solid #fff;
   }
   a:hover{
-    color: #dd4f08;
+    color: #999;
   }
 `;
 export default NavbarStyle;

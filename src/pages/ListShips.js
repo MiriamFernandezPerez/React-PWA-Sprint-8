@@ -63,7 +63,7 @@ const ListShips = () => {
                 //console.log(idShip);
                 return <Link to={`/ListShips/${idShip}`} key={starShip.url}><CardShip name={starShip.name} model={starShip.model}></CardShip></Link>
             })}
-            <div className="container my-4 ">
+            <div className="container mt-5 ">
                 <div className="row">
                     <div className="col-md-12">
                         <ReactPaginate

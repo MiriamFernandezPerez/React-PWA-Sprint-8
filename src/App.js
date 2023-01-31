@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from './pages/Home';
 import ListShips from './pages/ListShips';
 import StarShip from './components/StarShip/StarShip';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="ListShips/:idShip" element={<StarShip />} />
         </Routes>
       </Router>
+      <Footer></Footer>
     </div>
   );
 }

@@ -1,19 +1,15 @@
 import styled from 'styled-components';
 
-const HeaderStyle = styled.header`
-  max-height: 20vh;
+const FooterStyle = styled.footer`
+  background-color: #000;
   color: white;
-  margin-top: -2.5rem;
-  margin-bottom: 2rem;
-  .logo{
-    height: 16rem;
-  }
+  padding: 4rem 4rem;
   a{
     text-decoration: none;
     color: #fff;
   }
   a:hover{
-    color: #999;
+    box-shadow: 1px 3px 3px #999;
   }
   img{
     display: block;
@@ -24,4 +20,4 @@ const HeaderStyle = styled.header`
   }
   
 `;
-export default HeaderStyle;
+export default FooterStyle;

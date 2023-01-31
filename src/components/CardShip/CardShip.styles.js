@@ -4,7 +4,7 @@ const CardShipStyle = styled.div`
   background-color: #151515;
   color: white;
   width: 60%;
-  padding: 0.3rem;
+  padding: 1rem;
   margin: 0.7rem auto;
   h4{
     text-transform: uppercase;
@@ -19,5 +19,9 @@ const CardShipStyle = styled.div`
     text-decoration: none;
     color: #fff;
   }
+  li> a:hover{
+    color: #999;
+  }
+  
 `;
 export default CardShipStyle;
