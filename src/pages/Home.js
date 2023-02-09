@@ -11,6 +11,7 @@ const Home = () => {
                 <div className="col-md-12 my-5">
                     <h3 className="text-white my-5">Wellcome to StarWars Page</h3>
                     <h3 className="text-white my-5">Enjoy it and have fun</h3>
+                    <h3 className="text-white my-5">Here you can see all the StarShips of StarWars movies, all the details and much more!!</h3>
                     <Link to='/ListShips'>
                         <BotonInicio textBtnInicio="Start" className="btn-submit" type="button" ></BotonInicio>
                     </Link>
