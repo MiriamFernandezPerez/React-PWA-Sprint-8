@@ -5,6 +5,7 @@ import LogMenu from '../LogMenu/LogMenu';
 import SocialHeader from '../SocialHeader/SocialHeader';
 
 const Header = () => {
+    
   return (
     <HeaderStyle className="container-fluid">
       <div className="row align-items-center">
@@ -21,9 +22,9 @@ const Header = () => {
         </div>
         <div className="col-md-4">
           <ul className="text-center">
-            <LogMenu name="Login" text="Login" link="#"></LogMenu>
-            <LogMenu name="|" text="|" link="#"></LogMenu>
-            <LogMenu name="SingUp" text="SingUp" link="#"></LogMenu>
+            <LogMenu name="Login" text="Login" link="/Login"></LogMenu>
+            <LogMenu name="|" text="|"></LogMenu>
+            <LogMenu name="SingUp" text="SingUp" link="/Signup"></LogMenu>
           </ul>
         </div>
       </div>
@@ -32,4 +33,3 @@ const Header = () => {
 }
 
 export default Header;
-

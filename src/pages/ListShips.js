@@ -6,6 +6,7 @@ import { Link, useParams } from "react-router-dom";
 import BotonInicio from '../components/BotonInicio/BotonInicio';
 import ReactPaginate from 'react-paginate';
 
+
 const ListShips = () => {
 
     const [starShips, setStarShips] = useState([]);

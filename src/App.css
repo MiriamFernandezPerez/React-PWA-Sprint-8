@@ -64,3 +64,11 @@ a{
 {
     background-color: #999;
 }
+
+.ocultar {
+    display: none;
+}
+ 
+.mostrar {
+    display: block;
+}

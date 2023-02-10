@@ -1,4 +1,3 @@
-import './App.css';
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header/Header'
 import Navbar from './components/Navbar/Navbar';
@@ -7,6 +6,8 @@ import Home from './pages/Home';
 import ListShips from './pages/ListShips';
 import StarShip from './components/StarShip/StarShip';
 import Footer from './components/Footer/Footer';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 
 function App() {
 
@@ -19,6 +20,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/ListShips" element={<ListShips />} />
           <Route path="ListShips/:idShip" element={<StarShip />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/Signup" element={<Signup />} />
         </Routes>
       </Router>
       <Footer></Footer>
@@ -27,4 +30,3 @@ function App() {
 }
 
 export default App;
-

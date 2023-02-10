@@ -7,4 +7,4 @@ const SocialHeader = (props) => {
   )
 }
 
-export default SocialHeader
+export default SocialHeader;
