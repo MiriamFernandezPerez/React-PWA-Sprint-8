@@ -8,8 +8,13 @@ import StarShip from './components/StarShip/StarShip';
 import Footer from './components/Footer/Footer';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import GuardedRoute from './components/GuardedRoute/GuardedRoute';
+import { useContext, AuthContext } from 'react';
 
 function App() {
+
+  // const [isAutheticated, setisAutheticated] = useState(false);
+  // const { usuario } = useContext(AuthContext);
 
   return (
     <div className="App">
@@ -18,10 +23,13 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/ListShips" element={<ListShips />} />
-          <Route path="ListShips/:idShip" element={<StarShip />} />
+          <Route element={<GuardedRoute />}>
+            <Route path="/ListShips" element={<ListShips />} />
+            <Route path="ListShips/:idShip" element={<StarShip />} />
+          </Route>
           <Route path="/Login" element={<Login />} />
           <Route path="/Signup" element={<Signup />} />
+
         </Routes>
       </Router>
       <Footer></Footer>

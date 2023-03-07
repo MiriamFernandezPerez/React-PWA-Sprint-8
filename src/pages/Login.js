@@ -27,6 +27,8 @@ const Login = () => {
             localStorage.setItem("isLogged", JSON.stringify([result]));
             console.log('El usuario logueado y su contraseña es: ' + result.username + ' ' + result.password)
             setIsLogged(true);
+            //Creo un token para dar acceso al usuario en localstorage
+            localStorage.setItem("token", "true");
             response = 'ok';
             showAlert(response);
         }
