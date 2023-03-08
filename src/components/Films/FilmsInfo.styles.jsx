@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-const PilotsInfoStyle = styled.div`
-  background-color: #151515;
+const FilmsInfoStyle = styled.div`
+background-color: #151515;
   color: white;
   font-weight: bolder;
   width: 90%;
@@ -27,4 +27,4 @@ const PilotsInfoStyle = styled.div`
     background-color: rgba(255, 255, 255, 0.2);
   }
 `;
-export default PilotsInfoStyle;
+export default FilmsInfoStyle;

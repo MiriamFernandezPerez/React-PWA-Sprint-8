@@ -1,22 +1,21 @@
 import React from 'react';
-import PilotsInfoStyle from './PilotsInfo.styles';
+import FilmsInfoStyle from './FilmsInfo.styles';
 
-const PilotsInfo = (props) => {
+const FilmsInfo = (props) => {
 
     return (
-        <PilotsInfoStyle>
+        <FilmsInfoStyle>
     {/* https://starwars-visualguide.com/#/starships/9 */}
             <div className="container text-uppercase">
                 <div className="row text-center mb-3 card">
-                    <div className="col-sm-12 text-center card-body">
+                    <div className="col-sm-12 card-body">
                         <h5>{props.name}</h5>
-                        <img className="img my-4" src={props.url} alt="Pilot photo" />
+                        <img className="img my-4" src={props.url} alt="Film photo" />
                     </div>
                 </div>
             </div>
-        </PilotsInfoStyle>
+        </FilmsInfoStyle>
     )
 }
 
-export default PilotsInfo;
-
+export default FilmsInfo;

@@ -1,6 +1,7 @@
 import React from 'react';
 import StarShipStyle from './StarShipInfo.styles';
 import Pilots from '../Pilots/Pilots';
+import Films from '../Films/Films';
 
 const StarShipInfo = (props) => {
 
@@ -33,12 +34,14 @@ const StarShipInfo = (props) => {
                         <h5>Maximun Speed in RealSpace: <span>{props.maxspeed} MGLT</span></h5>
                     </div>
                 </div>
-                <div className="row mb-3">
+                <div className="row mb-3 text-center">
                     <div className="col-md-6">
                         <h4>Pilots:</h4>
-
                         <Pilots/>
-                        
+                    </div>
+                    <div className="col-md-6">
+                        <h4>Films:</h4>
+                        <Films/>
                     </div>
                 </div>
             </div>
