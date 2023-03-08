@@ -14,6 +14,7 @@ const StarShip = () => {
         axios.get(`https://swapi.dev/api/starships/${id}`)
             .then(res => {
                 setStarShip(res.data);
+                console.log(res.data);
             })
     }, [])
     

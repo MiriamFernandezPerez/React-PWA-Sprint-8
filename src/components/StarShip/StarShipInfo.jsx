@@ -1,5 +1,6 @@
 import React from 'react';
 import StarShipStyle from './StarShipInfo.styles';
+import Pilots from '../Pilots/Pilots';
 
 const StarShipInfo = (props) => {
 
@@ -29,13 +30,14 @@ const StarShipInfo = (props) => {
                         <h5>Length: <span>{props.length} metters</span></h5>
                         <h5>Maxium Athmosphering Speed: <span>{props.speed} hm/h</span></h5>
                         <h5>Hyperdriven Rating: <span>{props.rating}</span></h5>
-                        <h5>Maximun Speed in RealSpace: <span>{props.maxspeed}MGLT</span></h5>
+                        <h5>Maximun Speed in RealSpace: <span>{props.maxspeed} MGLT</span></h5>
                     </div>
                 </div>
                 <div className="row mb-3">
-                    <div className="col-md-12">
-                        <h4>Pilots: <span></span>
-                        </h4>
+                    <div className="col-md-6">
+                        <h4>Pilots:</h4>
+
+                        <Pilots/>
                         
                     </div>
                 </div>
