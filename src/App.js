@@ -13,9 +13,6 @@ import { useContext, AuthContext } from 'react';
 
 function App() {
 
-  // const [isAutheticated, setisAutheticated] = useState(false);
-  // const { usuario } = useContext(AuthContext);
-
   return (
     <div className="App">
       <Header></Header>
