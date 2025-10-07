@@ -19,15 +19,23 @@ Esta aplicación es una **Single Page Application (SPA)** que aprovecha las capa
 ## 📂 Estructura del proyecto
 
 📦 react-pwa-sprint8/
-│
+
 ├─ 📂 public/        # Activos estáticos y configuración PWA (manifest, icons)
+
 ├─ 📂 src/           # Código fuente React
+
 │   ├─ 📄 App.js     # Componente principal
+
 │   ├─ 📄 index.js   # Punto de entrada React
+
 │   └─ 📄 setupTests.js # Configuración de pruebas
+
 ├─ 📄 package.json       # Dependencias y scripts
+
 ├─ 📄 package-lock.json  # Bloqueo de dependencias
+
 └─ 📄 README.md          # Documentación del proyecto
+
 
 ---
 
