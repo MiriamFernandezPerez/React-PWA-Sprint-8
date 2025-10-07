@@ -1,70 +1,121 @@
-# Getting Started with Create React App
+# 🚀 React PWA Sprint 8
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React Logo](https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg)
 
-## Available Scripts
+Una **aplicación web progresiva (PWA)** construida con **React 18** utilizando **Create React App (CRA)**. Este proyecto forma parte de un sprint educativo enfocado en desarrollar habilidades en React y PWA.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📝 Descripción del proyecto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Esta aplicación es una **Single Page Application (SPA)** que aprovecha las capacidades de PWA para ofrecer una experiencia cercana a una app nativa: instalación en el dispositivo, carga rápida y offline.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Tecnologías principales:** React, react-scripts, web-vitals, Jest, Testing Library.
+- **Objetivo:** Aprender y practicar conceptos avanzados de React y PWAs.
+- **Alcance:** Implementación de la interfaz de usuario, monitoreo de rendimiento y pruebas unitarias.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📂 Estructura del proyecto
 
-### `npm run build`
+📦 react-pwa-sprint8/
+│
+├─ 📂 public/        # Activos estáticos y configuración PWA (manifest, icons)
+├─ 📂 src/           # Código fuente React
+│   ├─ 📄 App.js     # Componente principal
+│   ├─ 📄 index.js   # Punto de entrada React
+│   └─ 📄 setupTests.js # Configuración de pruebas
+├─ 📄 package.json       # Dependencias y scripts
+├─ 📄 package-lock.json  # Bloqueo de dependencias
+└─ 📄 README.md          # Documentación del proyecto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🔹 Capas de arquitectura
 
-### `npm run eject`
+| Capa               | Archivos                          | Responsabilidad                                               |
+|-------------------|----------------------------------|---------------------------------------------------------------|
+| Configuración      | package.json, package-lock.json   | Metadatos, dependencias, scripts, reglas de control de versiones |
+| Activos estáticos  | public/                           | HTML, manifiesto PWA, íconos                                  |
+| Solicitud          | src/                              | Interfaz y lógica de React                                     |
+| Calidad            | setupTests.js, App.test.js        | Pruebas unitarias y monitoreo de rendimiento                  |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ⚙️ Scripts disponibles
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Script             | Comando                    | Descripción                                   |
+|------------------|----------------------------|-----------------------------------------------|
+| Desarrollo        | `npm start`                | Lanza servidor con recarga automática        |
+| Producción        | `npm run build`            | Genera paquete optimizado para producción    |
+| Pruebas           | `npm test`                 | Ejecuta Jest en modo observación             |
+| Eject             | `npm run eject`            | Expone la configuración interna de CRA       |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🛠 Tecnologías y dependencias
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **React & React DOM** – Componentes y manipulación del DOM
+- **react-scripts** – Configuración cero para Webpack, Babel, ESLint, Jest
+- **Testing Library** – Pruebas de componentes y DOM
+- **web-vitals** – Medición de métricas de rendimiento (CLS, FID, LCP, FCP, TTFB)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🌐 Configuración de PWA
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+El proyecto está configurado como PWA mediante `public/manifest.json`:
 
-### Analyzing the Bundle Size
+- **Nombre:** Aplicación React
+- **Mostrar:** autónomo
+- **Color de tema:** #000000
+- **Color de fondo:** #ffffff
+- **Iconos:** 192x192px y 512x512px
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Permite instalación en dispositivos y funcionamiento offline parcial.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🧪 Calidad y monitoreo
 
-### Advanced Configuration
+- **Pruebas:** `src/setupTests.js` y `src/App.test.js` con Jest y Testing Library.
+- **Métricas de rendimiento:** `src/reportWebVitals.js` usando web-vitals.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 🔄 Flujo de trabajo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Instalar dependencias:  
+   ```bash
+   npm install
+   ```
+2. niciar servidor de desarrollo:
+  ```bash
+  npm start
+  ```
 
-### `npm run build` fails to minify
+3. Editar código en src/ y ver cambios en tiempo real.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. Ejecutar pruebas:
+   ```bash
+   npm test
+   ```
+5. Generar build de producción:
+   ```bash
+   npm run build
+   ```
+
+## 📖 Recursos
+
+- [Documentación React](https://reactjs.org/)
+- [Documentación Create React App](https://create-react-app.dev/)
+- [PWA en CRA](https://create-react-app.dev/docs/making-a-progressive-web-app/)
+- [Testing Library](https://testing-library.com/)
+
+---
+
+## ✨ Autor
+
+**Miriam Fernández Pérez**
+
