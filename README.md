@@ -1,6 +1,6 @@
 # 🚀 React PWA Sprint 8
 
-![React Logo](https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg)
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo" width="50"/>
 
 Una **aplicación web progresiva (PWA)** construida con **React 18** utilizando **Create React App (CRA)**. Este proyecto forma parte de un sprint educativo enfocado en desarrollar habilidades en React y PWA.
 
